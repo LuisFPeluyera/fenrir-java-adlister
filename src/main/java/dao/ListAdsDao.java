@@ -1,3 +1,8 @@
+package dao;
+
+import models.Ad;
+
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,6 +15,8 @@ public class ListAdsDao implements Ads {
         }
         return ads;
     }
+
+
 
     public Long insert(Ad ad) {
         // make sure we have ads

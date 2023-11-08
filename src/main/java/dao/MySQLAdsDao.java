@@ -1,11 +1,14 @@
+package dao;
+
 import com.mysql.cj.jdbc.Driver;
+import models.Ad;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class MySQLAdsDao implements Ads{
+public class MySQLAdsDao implements Ads {
 
     private List<Ad> ads;
     @Override
@@ -22,6 +25,7 @@ public class MySQLAdsDao implements Ads{
 
         return adsList;
     }
+
 
     @Override
     public Long insert(Ad ad) throws SQLException {
